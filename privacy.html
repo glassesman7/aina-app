@@ -9,7 +9,7 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="updated">Last updated October 28, 2026</p>
+  <p class="updated">Last updated October 31, 2026</p>
 
   <p>Aina is a personal assistant run privately by one person for their own
   use. The only Google account it connects to is its owner's. This page
@@ -19,21 +19,39 @@
   <ul>
     <li><b>Gmail</b>: reading messages so it can answer questions about them
     and tell its owner about mail that matters; changing labels; and sending
-    mail only when its owner asks it to.</li>
+    mail only when its owner asks it to. It can also save drafts. The Gmail
+    permission it asks for (gmail.modify) would let it archive messages or
+    move them to the trash; it does not delete anything permanently.</li>
     <li><b>Google Calendar</b>: reading the list of calendars, and reading,
     adding, moving and cancelling events.</li>
   </ul>
 
   <h2>Where the data goes</h2>
+  <p>Data is processed and stored on computers its owner controls. It is not
+  sold or rented, and it is not used for advertising. It leaves those
+  computers only in the ways below.</p>
   <ul>
-    <li>Data is processed and stored on computers its owner controls. It is
-    not sold, rented or shared with anyone, and it is not used for
-    advertising.</li>
-    <li>To answer a request, the relevant text may be sent to the Anthropic
-    API (Claude), which processes it to produce the answer. Anthropic does not
-    use API data to train its models by default.</li>
+    <li><b>A model provider.</b> To answer a request, the relevant text,
+    which can include the text of an email or a calendar event, is sent to
+    the model provider its owner has chosen: the Anthropic API (Claude),
+    or, if its owner selects it, OpenAI, Google Gemini, or another
+    OpenAI-compatible service. Text goes to a provider only when it is the
+    one chosen. Each provider processes the text to produce the answer under
+    its own terms; Anthropic does not use API data to train its models by
+    default.</li>
+    <li><b>Notifications.</b> When new mail matters, Aina sends a short
+    notification to its owner's phone. For mail, that text is a one-line
+    summary of the message. It is delivered through Google's Firebase Cloud
+    Messaging and, for browsers, the web push service of the browser's maker
+    (Google, Mozilla or Apple).</li>
+    <li><b>An optional tunnel.</b> The owner's phone normally reaches Aina
+    over a private network (Tailscale) or the local network. If its owner
+    instead turns on a Cloudflare tunnel, the traffic between the phone and
+    the computer passes through Cloudflare, which can see it.</li>
     <li>Aina does not use Google user data to develop, improve or train
     general artificial intelligence or machine learning models.</li>
+    <li>Apart from the services above, Aina does not share Google user data
+    with anyone.</li>
   </ul>
 
   <h2>Google API Services User Data Policy</h2>
