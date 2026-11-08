@@ -35,7 +35,7 @@ data. It must match the code, or Google can refuse or revoke the app's access:
   they allow is under "What Aina accesses";
 - everywhere the text can go is under "Where the data goes": the model
   providers the owner can pick (`ONLINE_PROVIDERS` in Aina's `models.py`),
-  the notification services (`phone/notify.py`), and the optional Cloudflare
+  the notification services (`notify.py`), and the optional Cloudflare
   tunnel (`phone/reach.py`).
 
 Change the page in the same piece of work as any change to those, and bump the
